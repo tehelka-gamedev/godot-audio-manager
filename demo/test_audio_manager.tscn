@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1da6pbepkrj4"]
+
+[ext_resource type="Script" path="res://demo/test_audio_manager.gd" id="1_ufnhe"]
+[ext_resource type="AudioStream" uid="uid://dr8c3hp4j0n7u" path="res://demo/Strength of the Titans.mp3" id="2_gbeed"]
+[ext_resource type="AudioStream" uid="uid://rnhk104rnxcx" path="res://demo/metalClick.ogg" id="3_u2rkg"]
+
+[node name="TestAudioManager" type="Node2D"]
+script = ExtResource("1_ufnhe")
+music = ExtResource("2_gbeed")
+sound_effect = ExtResource("3_u2rkg")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+offset_left = 404.0
+offset_top = 208.0
+offset_right = 562.0
+offset_bottom = 274.0
+metadata/_edit_group_ = true
+
+[node name="ButtonMusic" type="Button" parent="VBox"]
+layout_mode = 2
+text = "Click me for music !"
+
+[node name="ButtonMusicStop" type="Button" parent="VBox"]
+layout_mode = 2
+text = "Stop Music"
+
+[node name="ButtonMusicFadeOut" type="Button" parent="VBox"]
+layout_mode = 2
+text = "Fade Out music"
+
+[node name="ButtonSound" type="Button" parent="."]
+offset_left = 631.0
+offset_top = 208.0
+offset_right = 789.0
+offset_bottom = 256.0
+text = "Click me for sound"
+
+[node name="Credits" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 368.0
+offset_top = 450.0
+offset_right = 843.0
+offset_bottom = 603.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+text = "Credits:
+\"Strength of the Titans\" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+Sound by Kenney (https://kenney.nl/assets/rpg-audio)"
